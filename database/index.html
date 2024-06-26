@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <h2>Student Registration</h2>
+    <form action="form.php" method="post">
+
+        <table>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" name="sname" id="nameid" keypress="return checkName();"><span id="nid"></span> </td>
+            </tr>
+            <tr>
+                <td>Student Email</td>
+                <td><input type="text" name="semail" id="emailid"> </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="scity" id="cityid"> </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" id="gender" value="male" required> 
+                    <label for="gender">Male</label> 
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="gender">Female</label> 
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Courses:</td>
+                <td><input type="checkbox" name="bca" value="bca">BCA
+                <input type="checkbox" name="csit" value="csit">BSc CSIT
+                <input type="checkbox" name="bbm" value="bbm">BBM</td>
+
+            </tr>
+            
+            <tr>
+                <td>Select country:</td>
+                <td><select name="country">
+                    <option value="nepal">Nepal</option>
+                    <option value="india">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="china">China</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Save Info:</td>
+            <td><button type="submit" name="submitbtn">Submit</button></td>
+        </tr>
+    </table>
+</form>
+    <script src="form.js"></script>
+</body>
+</html>
