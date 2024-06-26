@@ -13,6 +13,4 @@
  }  
  echo "Connected successfully";
 
- $sql = ""
-
 ?>
