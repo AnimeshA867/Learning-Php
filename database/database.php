@@ -3,7 +3,7 @@
  $server ="localhost";
  $username = "root";
  $password = "";
- $dbname = "users";
+ $dbname = "student";
 
  $conn = new mysqli($server, $username, $password, $dbname);
 
@@ -11,6 +11,6 @@
      die("Connection failed: " . $conn->connect_error);
 
  }  
- echo "Connected successfully";
+//  echo "Connected successfully";
 
 ?>
